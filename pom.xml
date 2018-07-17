@@ -9,9 +9,8 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>findmyband Maven Webapp</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <name>findmyband</name>
+  <url>http://www.find-my-band.com</url>
 
   <properties>
     <java.version>1.8</java.version>
