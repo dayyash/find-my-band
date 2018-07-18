@@ -37,7 +37,7 @@
           <version>2.2</version>
           <configuration>
             <url>${TOMCAT_DEPLOY_URL}</url>
-            <!--<server>Tomcat</server>-->
+            <server>localhost</server>
             <path>/myapp</path>
             <update>true</update>
               <!--<username>maven</username>-->
