@@ -6,5 +6,10 @@ pipeline {
         sh 'mvn clean package -DskipTests'
       }
     }
+    stage('Maven Deploy') {
+      steps {
+        sh 'mvn tomcat7:deploy'
+      }
+    }
   }
 }
