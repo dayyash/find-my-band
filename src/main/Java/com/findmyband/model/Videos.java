@@ -40,7 +40,7 @@ public class Videos {
 
     @Override
     public String toString() {
-        return "Videos{" +
+        return "VideosDao{" +
                 "id=" + id +
                 ", memberid=" + memberid +
                 ", url='" + url + '\'' +
