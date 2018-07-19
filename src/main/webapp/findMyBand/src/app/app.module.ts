@@ -8,6 +8,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { PostComponent } from './components/post/post.component';
 import { ThreadComponent } from './components/thread/thread.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { MainComponent } from './components/main/main.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProfileComponent } from './components/profile/profile.component';
     RegisterComponent,
     PostComponent,
     ThreadComponent,
-    ProfileComponent
+    ProfileComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
