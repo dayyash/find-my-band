@@ -1,5 +1,14 @@
 package com.findmyband.model;
 
+//posts should have timestamps?
+//for order of the thread
+
+import javax.persistence.Entity;
+import javax.persistence.NamedQueries;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "posts", schema = "public")
 public class Posts {
     private int id;
     private int memberid;

@@ -1,5 +1,29 @@
 package com.findmyband.model;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="member", schema="public")
+@NamedQueries({
+        @NamedQuery(
+                name = "getMemberById",
+                query = "From Member Where id = :id"
+        ),
+        @NamedQuery(
+                name = "getMemberByUsernamePassword",
+                query = "From Member Where username = :username And passowrd = :password"
+        ),
+        @NamedQuery(
+                name = "getListMembersBySpecialty1",
+                query = "From Member Where special1 = :special1"
+        )
+})
+@NamedNativeQueries({
+        @NamedNativeQuery(
+                name = "getMemberByIdNS",
+                query = "SELECT * FROM member WHERE id = ?"
+        )
+})
 public class Member {
     private int id;
     private String firstname;
@@ -34,6 +58,25 @@ public class Member {
         this.age = age;
     }
 
+
+    public Member(String firstname, String lastname, String username, String password, String city, String state, String special1, String special2, String special3, String gender, String genres, int age) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.username = username;
+        this.password = password;
+        this.city = city;
+        this.state = state;
+        this.special1 = special1;
+        this.special2 = special2;
+        this.special3 = special3;
+        this.gender = gender;
+        this.genres = genres;
+        this.age = age;
+    }
+
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getId() {
         return id;
     }
