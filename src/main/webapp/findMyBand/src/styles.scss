@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(9,85,121,0.5634628851540616) 50%, rgba(0,212,255,1) 100%);
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+.title{
+    position: absolute;
+    left: 25%;
+    top: 0;
+    clear:left;
+    height:auto;
+    z-index: 0;
+    text-align:center;
+    font-family: "SeaBreeze"; 
+    font-size: 22px;
+}
+#container {
+   display: grid;
+   grid-template-columns: 70px auto;
+   height: 100%;
+
+   #content {
+       padding: 30px 50px;
+
+       ul {
+           list-style-type: none;
+           margin:0;padding:0;
+       
+           li {
+               background: #fff;
+               border-radius: 8px;
+               padding: 20px;
+               margin-bottom: 8px;
+               width: 50%;
+       
+               a {
+                   font-size: 1.5em;
+                   text-decoration: none;
+                   font-weight: bold;
+                   color:#ff8800;
+               }
+       
+               ul {
+                   margin-top: 20px;
+                   
+                   li {
+                       padding:0;
+       
+                       a {
+                           font-size: 1em;
+                           font-weight: 300;
+                       }
+                   }
+               }
+           }
+       }
+   }
+}
+@font-face { font-family: 'SeaBreeze'; 
+    src: url('//static1.squarespace.com/static/59377bf2d482e9936343333b/t/595eefae72af6564b208c050/1499393967009/SeaBreeze-Regular.woff') format('woff'); 
+    font-weight: normal; font-style: normal; }
+    

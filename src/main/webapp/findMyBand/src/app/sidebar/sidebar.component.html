@@ -1,0 +1,22 @@
+<nav>
+  <ul>
+
+      <li>
+          <a routerLink="" [class.activated]="currentUrl == '/'">
+            <i class="material-icons">forum</i>
+          </a>
+        </li>
+
+    <li>
+      <a routerLink="users" [class.activated]="currentUrl == '/users'">
+        <i class="material-icons">person</i>
+      </a>
+    </li>
+    
+    <li>
+      <a routerLink="posts" [class.activated]="currentUrl == '/chat'">
+        <i class="material-icons">message</i>
+      </a>
+    </li>
+  </ul>
+</nav>

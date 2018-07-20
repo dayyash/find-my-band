@@ -1,0 +1,27 @@
+nav {
+    background: #2D2E2E;
+    height: 100%;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        padding: 20px;
+
+        li {
+
+            a {
+                color: #fff;
+                padding: 20px;
+                display: block;
+                border-radius: 5px;
+            }
+
+            .activated {
+                background: rgb(255,111,0);
+                background: linear-gradient(270deg, rgba(255,111,0,1) 30%, rgba(255,255,255,1) 100%);background-color: #ff8800;
+            }
+        }
+    }
+    
+}
