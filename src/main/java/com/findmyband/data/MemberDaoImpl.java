@@ -20,21 +20,32 @@ public class MemberDaoImpl implements MemberDao {
 
     @Override
     public Member save(Member member) {
-        System.out.println(member);
 //        Configuration configuration = new Configuration().configure();
 //        sessionFactory = configuration.buildSessionFactory();
+        System.out.println("MemberDao start save ---");
         Integer id = (Integer) sessionFactory.getCurrentSession().save(member);
         member.setId(id);
+        System.out.println("MemberDao -- " + sessionFactory.getCurrentSession().get(Member.class, 9));
         return member;
     }
 
     @Override
     public Member getById(Serializable id) {
-        return null;
+
+        return sessionFactory.getCurrentSession().get(Member.class, id);
     }
 
     @Override
     public Member getByObject(Member member) {
         return null;
+    }
+
+    @Override
+    public Member getMemberByUsername(String username, String password) {
+        Member m = (Member) sessionFactory.getCurrentSession()
+                .getNamedQuery("getMemberByUsernamePassword")
+                .setParameter("username", username).setParameter("password", password)
+                .uniqueResult();
+        return m;
     }
 }

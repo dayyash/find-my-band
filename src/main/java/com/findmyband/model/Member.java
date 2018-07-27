@@ -31,17 +31,40 @@ public class Member {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Column(name = "firstname", nullable = false)
     private String firstname;
+
+    @Column(name = "lastname", nullable = false)
     private String lastname;
+
+    @Column(name = "username", nullable = false)
     private String username;
+
+    @Column(name = "password", nullable = false)
     private String password;
+
+    @Column(name = "city")
     private String city;
+
+    @Column(name = "state")
     private String state;
+
+    @Column(name = "special1", nullable = false)
     private String special1;
+
+    @Column(name = "special2")
     private String special2;
+
+    @Column(name = "special3")
     private String special3;
+
+    @Column(name = "gender", nullable = false)
     private String gender;
+
+    @Column(name = "genres")
     private String genres;
+
+    @Column(name = "age", nullable = false)
     private int age;
 
     public Member() {

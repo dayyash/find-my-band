@@ -71,12 +71,16 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 
     //setup Jackson to be aware of Hibernate
     public MappingJackson2HttpMessageConverter jacksonMessageConverter() {
-        MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
-
         ObjectMapper mapper = new ObjectMapper();
-        //register Hibernate
+//        Hibernate5Module module = new Hibernate5Module();
+//        module.enable(Hibernate5Module.Feature.FORCE_LAZY_LOADING);
         mapper.registerModule(new Hibernate5Module());
-        converter.setObjectMapper(mapper);
+//        mapper.registerModule(module);
+
+        MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter(mapper);
+
+        //register Hibernate
+//        converter.setObjectMapper(mapper);
         return converter;
     }
 
