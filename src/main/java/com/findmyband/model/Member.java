@@ -11,7 +11,7 @@ import javax.persistence.*;
         ),
         @NamedQuery(
                 name = "getMemberByUsernamePassword",
-                query = "From Member Where username = :username And passowrd = :password"
+                query = "From Member Where username = :username And password = :password"
         ),
         @NamedQuery(
                 name = "getListMembersBySpecialty1",
@@ -25,7 +25,12 @@ import javax.persistence.*;
         )
 })
 public class Member {
+
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     private String firstname;
     private String lastname;
     private String username;
@@ -74,9 +79,6 @@ public class Member {
         this.age = age;
     }
 
-    @Id
-    @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getId() {
         return id;
     }

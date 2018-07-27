@@ -1,0 +1,4 @@
+target/
+src/main/webapp/findMyBand/node_modules/
+.idea/
+*.iml
