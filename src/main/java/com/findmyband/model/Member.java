@@ -1,18 +1,70 @@
 package com.findmyband.model;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="member", schema="public")
+@NamedQueries({
+        @NamedQuery(
+                name = "getMemberById",
+                query = "From Member Where id = :id"
+        ),
+        @NamedQuery(
+                name = "getMemberByUsernamePassword",
+                query = "From Member Where username = :username And password = :password"
+        ),
+        @NamedQuery(
+                name = "getListMembersBySpecialty1",
+                query = "From Member Where special1 = :special1"
+        )
+})
+@NamedNativeQueries({
+        @NamedNativeQuery(
+                name = "getMemberByIdNS",
+                query = "SELECT * FROM member WHERE id = ?"
+        )
+})
 public class Member {
+
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @Column(name = "firstname", nullable = false)
     private String firstname;
+
+    @Column(name = "lastname", nullable = false)
     private String lastname;
+
+    @Column(name = "username", nullable = false)
     private String username;
+
+    @Column(name = "password", nullable = false)
     private String password;
+
+    @Column(name = "city")
     private String city;
+
+    @Column(name = "state")
     private String state;
+
+    @Column(name = "special1", nullable = false)
     private String special1;
+
+    @Column(name = "special2")
     private String special2;
+
+    @Column(name = "special3")
     private String special3;
+
+    @Column(name = "gender", nullable = false)
     private String gender;
+
+    @Column(name = "genres")
     private String genres;
+
+    @Column(name = "age", nullable = false)
     private int age;
 
     public Member() {
@@ -20,6 +72,22 @@ public class Member {
 
     public Member(int id, String firstname, String lastname, String username, String password, String city, String state, String special1, String special2, String special3, String gender, String genres, int age) {
         this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.username = username;
+        this.password = password;
+        this.city = city;
+        this.state = state;
+        this.special1 = special1;
+        this.special2 = special2;
+        this.special3 = special3;
+        this.gender = gender;
+        this.genres = genres;
+        this.age = age;
+    }
+
+
+    public Member(String firstname, String lastname, String username, String password, String city, String state, String special1, String special2, String special3, String gender, String genres, int age) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.username = username;
