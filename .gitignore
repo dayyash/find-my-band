@@ -1,5 +1,4 @@
-target
-src/main/webapp/node_modules
+target/
+src/main/webapp/findMyBand/node_modules/
 .idea/
-out/
 *.iml

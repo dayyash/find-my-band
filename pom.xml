@@ -43,12 +43,12 @@
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
-      <version>2.8.10</version>
+      <version>2.9.6</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>2.8.10</version>
+      <version>2.9.6</version>
     </dependency>
     <dependency>
       <groupId>org.postgresql</groupId>
@@ -70,10 +70,22 @@
       <artifactId>commons-dbcp2</artifactId>
       <version>2.5.0</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype/jackson-datatype-hibernate5 -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-hibernate5</artifactId>
+      <version>2.9.6</version>
+    </dependency>
   </dependencies>
 
   <build>
     <finalName>findmyband</finalName>
+    <!--<resources>-->
+      <!--<resource>-->
+        <!--<directory>/src/main/webapp/findMyBand/node_modules</directory>-->
+        <!--<excludes></excludes>-->
+      <!--</resource>-->
+    <!--</resources>-->
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
@@ -81,13 +93,19 @@
           <artifactId>tomcat7-maven-plugin</artifactId>
           <version>2.2</version>
           <configuration>
-            <url>${TOMCAT_DEPLOY_URL}</url>
-            <server>localhost</server>
-            <path>/myapp</path>
-            <update>true</update>
-              <!--<username>maven</username>-->
-              <!--<password>deploy</password>-->
+            <server>Tomcat</server>
+            <username>maven-deploy</username>
+            <password>password</password>
           </configuration>
+
+          <!--<configuration>-->
+            <!--<url>${TOMCAT_DEPLOY_URL}</url>-->
+            <!--<server>localhost</server>-->
+            <!--<path>/myapp</path>-->
+            <!--<update>true</update>-->
+              <!--&lt;!&ndash;<username>maven</username>&ndash;&gt;-->
+              <!--&lt;!&ndash;<password>deploy</password>&ndash;&gt;-->
+          <!--</configuration>-->
         </plugin>
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
@@ -109,6 +127,9 @@
         <plugin>
           <artifactId>maven-war-plugin</artifactId>
           <version>3.2.0</version>
+          <configuration>
+            <packagingExcludes>/src/main/webapp/findMyBand/node_modules/**</packagingExcludes>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>

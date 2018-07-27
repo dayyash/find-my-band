@@ -25,7 +25,7 @@ public class WebInitializer implements WebApplicationInitializer {
 
     private AnnotationConfigWebApplicationContext getContext() {
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
-        context.setConfigLocation("com.ex.com.findmyband.WebConfig");
+        context.setConfigLocation("com.findmyband.WebConfig");
         return context;
     }
 }
