@@ -1,26 +1,37 @@
 package com.findmyband.model;
 
-//posts should have timestamps?
-//for order of the thread
-//
-//import javax.persistence.Entity;
-//import javax.persistence.NamedQueries;
-//import javax.persistence.Table;
-//
-//@Entity
-//@Table(name = "posts", schema = "public")
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "posts", schema = "public")
+@NamedQuery(
+        name = "getAllPosts",
+        query = "From Posts"
+)
 public class Posts {
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonProperty("id")
     private int id;
+
+    @Column(name = "memberid", nullable = false)
+    @JsonProperty("memberid")
     private int memberid;
-    private String post;
+
+    @Column(name = "message", nullable = false)
+    @JsonProperty("message")
+    private String message;
 
     public Posts() {
     }
 
-    public Posts(int id, int memberid, String post) {
+    public Posts(int id, int memberid, String message) {
         this.id = id;
         this.memberid = memberid;
-        this.post = post;
+        this.message = message;
     }
 
     public int getId() {
@@ -39,12 +50,12 @@ public class Posts {
         this.memberid = memberid;
     }
 
-    public String getPost() {
-        return post;
+    public String getMessage() {
+        return message;
     }
 
-    public void setPost(String post) {
-        this.post = post;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     @Override
@@ -52,7 +63,7 @@ public class Posts {
         return "Posts{" +
                 "id=" + id +
                 ", memberid=" + memberid +
-                ", post='" + post + '\'' +
+                ", message='" + message + '\'' +
                 '}';
     }
 }

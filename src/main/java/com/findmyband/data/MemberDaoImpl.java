@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 import javax.sql.DataSource;
 import java.io.Serializable;
 import java.sql.SQLException;
+import java.util.List;
 
 @Repository
 public class MemberDaoImpl implements MemberDao {
@@ -20,12 +21,10 @@ public class MemberDaoImpl implements MemberDao {
 
     @Override
     public Member save(Member member) {
-//        Configuration configuration = new Configuration().configure();
-//        sessionFactory = configuration.buildSessionFactory();
         System.out.println("MemberDao start save ---");
         Integer id = (Integer) sessionFactory.getCurrentSession().save(member);
         member.setId(id);
-        System.out.println("MemberDao -- " + sessionFactory.getCurrentSession().get(Member.class, 9));
+//        System.out.println("MemberDao -- " + sessionFactory.getCurrentSession().get(Member.class, 9));
         return member;
     }
 
@@ -47,5 +46,12 @@ public class MemberDaoImpl implements MemberDao {
                 .setParameter("username", username).setParameter("password", password)
                 .uniqueResult();
         return m;
+    }
+
+    @Override
+    public List<Member> getAll() {
+
+        List<Member> members = sessionFactory.getCurrentSession().getNamedQuery("getAllMembers").list();
+        return members;
     }
 }
