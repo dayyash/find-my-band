@@ -1,0 +1,12 @@
+{
+    "firstname":"fname1",
+    "lastname":"lname1",
+    "username":"uname1",
+    "password":"pword1",
+    "city":"city1",
+    "state":"state1",
+    "age":25,
+    "special1":"singer",
+    "gender":"male",
+    "genres":"rock"
+}

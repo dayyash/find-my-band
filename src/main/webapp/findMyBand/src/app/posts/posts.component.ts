@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { Observable } from 'rxjs';
 import { trigger,style,transition,animate,keyframes,query,stagger } from '@angular/animations';
+import { SbService } from '../sb.service';
 
 
 @Component({
@@ -35,12 +36,13 @@ import { trigger,style,transition,animate,keyframes,query,stagger } from '@angul
 export class PostsComponent implements OnInit {
   posts$: Object;
   
-  constructor(private data: DataService) { }
+  constructor(private data: DataService, public nav:SbService) { }
 
   ngOnInit() {
     this.data.getPosts().subscribe(
       data => this.posts$ = data 
     );
+    this.nav.show();
   }
 
 }

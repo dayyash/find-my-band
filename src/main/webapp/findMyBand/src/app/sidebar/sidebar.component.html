@@ -1,22 +1,40 @@
-<nav>
+<nav *ngIf="nav.visible">
   <ul>
 
       <li>
-          <a routerLink="" [class.activated]="currentUrl == '/'">
+          <a routerLink="posts" [class.activated]="currentUrl == '/posts'">
             <i class="material-icons">forum</i>
           </a>
         </li>
 
     <li>
       <a routerLink="users" [class.activated]="currentUrl == '/users'">
-        <i class="material-icons">person</i>
+        <i class="material-icons">person_add</i>
       </a>
     </li>
+
+    <li>
+        <a routerLink="send" [class.activated]="currentUrl == '/send'">
+          <i class="material-icons">send</i>
+        </a>
+      </li>
     
     <li>
-      <a routerLink="posts" [class.activated]="currentUrl == '/chat'">
-        <i class="material-icons">message</i>
+      <a routerLink="profile" [class.activated]="currentUrl == '/profile'">
+        <i class="material-icons">face</i>
       </a>
     </li>
+
+    <li>
+        <a routerLink="chat" [class.activated]="currentUrl == '/chat'">
+          <i class="material-icons">message</i>
+        </a>
+      </li>
+
+      <li>
+          <a routerLink="" [class.activated]="currentUrl == ''">
+            <i class="material-icons">power_settings_new</i>
+          </a>
+        </li>
   </ul>
 </nav>
