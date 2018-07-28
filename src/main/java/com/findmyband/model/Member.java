@@ -1,5 +1,7 @@
 package com.findmyband.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.*;
 
 @Entity
@@ -14,8 +16,8 @@ import javax.persistence.*;
                 query = "From Member Where username = :username And password = :password"
         ),
         @NamedQuery(
-                name = "getListMembersBySpecialty1",
-                query = "From Member Where special1 = :special1"
+                name = "getAllMembers",
+                query = "From Member"
         )
 })
 @NamedNativeQueries({
@@ -29,42 +31,55 @@ public class Member {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonProperty("id")
     private int id;
 
     @Column(name = "firstname", nullable = false)
+    @JsonProperty("firstname")
     private String firstname;
 
     @Column(name = "lastname", nullable = false)
+    @JsonProperty("lastname")
     private String lastname;
 
     @Column(name = "username", nullable = false)
+    @JsonProperty("username")
     private String username;
 
     @Column(name = "password", nullable = false)
+    @JsonProperty("password")
     private String password;
 
     @Column(name = "city")
+    @JsonProperty("city")
     private String city;
 
     @Column(name = "state")
+    @JsonProperty("state")
     private String state;
 
     @Column(name = "special1", nullable = false)
+    @JsonProperty("special1")
     private String special1;
 
     @Column(name = "special2")
+    @JsonProperty("special2")
     private String special2;
 
     @Column(name = "special3")
+    @JsonProperty("special3")
     private String special3;
 
     @Column(name = "gender", nullable = false)
+    @JsonProperty("gender")
     private String gender;
 
     @Column(name = "genres")
+    @JsonProperty("genres")
     private String genres;
 
     @Column(name = "age", nullable = false)
+    @JsonProperty("age")
     private int age;
 
     public Member() {

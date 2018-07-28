@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.Serializable;
+import java.util.List;
 
 @Service
 public class MemberService {
@@ -25,5 +26,10 @@ public class MemberService {
     @Transactional
     public Member findMember(String username, String password) {
         return memberDao.getMemberByUsername(username, password);
+    }
+
+    @Transactional
+    public List<Member> listMembers() {
+        return memberDao.getAll();
     }
 }

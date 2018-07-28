@@ -7,18 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a8ff7b6-c3d0-40c9-ac13-fddf84b8107d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/findmyband/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/findmyband/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/findmyband/controller/PostsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/findmyband/service/PostsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/findmyband/HibernateConfigUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/findmyband/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/findmyband/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/findmyband/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/findmyband/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/findmyband/data/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/findmyband/data/BaseDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/findmyband/data/MemberDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/findmyband/data/MemberDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/findmyband/data/PostsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/findmyband/data/PostsDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/findmyband/model/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/findmyband/model/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/findmyband/model/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/findmyband/model/Posts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/findMyBand/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/findMyBand/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/MemberDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MemberDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/findmyband/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/findmyband/service/MemberService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/src/main/webapp/findMyBand/dist/" />
     <ignored path="$PROJECT_DIR$/src/main/webapp/findMyBand/tmp/" />
@@ -32,11 +31,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="MemberController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/controller/MemberController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="35" lean-forward="true" selection-start-line="30" selection-end-line="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/data/BaseDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Member.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/model/Member.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="18" column="37" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Posts.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/model/Posts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/controller/PostsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="36" lean-forward="true" selection-start-line="31" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="MemberDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/data/MemberDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="504">
+              <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,41 +97,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebInitializer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/WebInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MemberController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/controller/MemberController.java">
+      <file leaf-file-name="PostsService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/service/PostsService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="280">
-              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#736#737#0" expanded="true" />
+                <element signature="e#776#777#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="MemberService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/service/MemberService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+            <state relative-caret-position="400">
+              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+              <folding>
+                <element signature="e#938#939#0" expanded="true" />
+                <element signature="e#969#970#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="PostsDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/data/PostsDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+            <state relative-caret-position="480">
+              <caret line="38" column="99" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="99" />
             </state>
           </provider>
         </entry>
@@ -106,17 +155,22 @@
         <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/findmyband/HibernateConfigUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/findmyband/model/Posts.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/findmyband/model/Member.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/test/MemberDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/findmyband/service/MemberService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/findmyband/WebInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/findmyband/data/MemberDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/findmyband/WebConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/findmyband/controller/MemberController.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/com/findmyband/data/MemberDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/findmyband/data/BaseDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/findmyband/WebConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/findmyband/data/PostsDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/findmyband/service/PostsService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/findmyband/model/Posts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/findmyband/controller/PostsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/findmyband/model/Member.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/findmyband/data/MemberDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/findmyband/service/MemberService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/findmyband/controller/MemberController.java" />
       </list>
     </option>
   </component>
@@ -125,6 +179,13 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -155,16 +216,18 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="951" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,6 +245,57 @@
               <item name="find-my-band" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="findmyband" type="b2602c69:ProjectViewProjectNode" />
+              <item name="find-my-band" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="findmyband" type="b2602c69:ProjectViewProjectNode" />
+              <item name="find-my-band" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="findmyband" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="findmyband" type="b2602c69:ProjectViewProjectNode" />
+              <item name="find-my-band" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="findmyband" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="findmyband" type="b2602c69:ProjectViewProjectNode" />
+              <item name="find-my-band" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="findmyband" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="findmyband" type="b2602c69:ProjectViewProjectNode" />
+              <item name="find-my-band" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="findmyband" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="findmyband" type="b2602c69:ProjectViewProjectNode" />
+              <item name="find-my-band" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="findmyband" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="findmyband" type="b2602c69:ProjectViewProjectNode" />
@@ -208,8 +322,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,6 +332,10 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.findmyband.controller" />
+      <recent name="com.findmyband.service" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\layya_000\My Documents\find-my-band" />
       <recent name="C:\Users\layya_000\My Documents\find-my-band\src\main\java\com\findmyband" />
@@ -238,7 +354,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MemberDaoTest">
+  <component name="RunManager" selected="Tomcat Server.Tomcat">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -298,6 +414,7 @@
       <listeners />
     </configuration>
     <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.56" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="findmyband:war">
@@ -308,6 +425,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_findmyband" />
+        <option name="HTTP_PORT" value="8081" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -404,6 +522,12 @@
       <workItem from="1532617439572" duration="3476000" />
       <workItem from="1532632833585" duration="270000" />
       <workItem from="1532635819156" duration="15000" />
+      <workItem from="1532653011879" duration="12603000" />
+      <workItem from="1532697696556" duration="748000" />
+      <workItem from="1532698835473" duration="791000" />
+      <workItem from="1532713367600" duration="2452000" />
+      <workItem from="1532716059614" duration="3205000" />
+      <workItem from="1532735819871" duration="2596000" />
     </task>
     <task id="LOCAL-00001" summary="hibernate test">
       <created>1532100864260</created>
@@ -412,7 +536,21 @@
       <option name="project" value="LOCAL" />
       <updated>1532100864260</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="GET HTTP Request to front controller to Dao">
+      <created>1532653277872</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1532653277872</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Implemented getMemberByUsernamePassword">
+      <created>1532662705386</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1532662705387</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -448,10 +586,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51581000" />
+    <option name="totallyTimeSpent" value="73976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -466,26 +605,27 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.329429" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.329429" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329429" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.60175693" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.5021962" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32796487" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32796487" />
       <window_info id="Persistence" order="3" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24459459" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28513515" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.329429" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
+      <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.329429" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,51 +637,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="something" />
     <MESSAGE value="hibernate test" />
-    <option name="LAST_COMMIT_MESSAGE" value="hibernate test" />
+    <MESSAGE value="GET HTTP Request to front controller to Dao" />
+    <MESSAGE value="Implemented getMemberByUsernamePassword" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented getMemberByUsernamePassword" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/WebInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="44" column="55" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/MemberDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="40" column="7" selection-start-line="12" selection-start-column="4" selection-end-line="40" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/model/Posts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="43" selection-start-line="4" selection-start-column="2" selection-end-line="10" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/data/MemberDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -567,9 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
           <caret line="40" column="7" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="40" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -610,13 +707,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/MemberDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -654,13 +745,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/MemberDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -701,9 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -739,13 +821,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/HibernateConfigUtil.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/model/Posts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="43" selection-start-line="4" selection-start-column="2" selection-end-line="10" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/findMyBand/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -754,20 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="22" lean-forward="true" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/service/MemberService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="69" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/data/MemberDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -784,47 +845,6 @@
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/model/Member.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="66" column="202" lean-forward="true" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="202" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/WebInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1160">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/data/MemberDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/controller/MemberController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -832,10 +852,131 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final.jar!/org/hibernate/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/WebInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/data/PostsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+        <state relative-caret-position="1960">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/data/MemberDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/data/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/model/Posts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/model/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/data/PostsDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="38" column="99" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/service/PostsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding>
+            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/data/MemberDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/service/MemberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/controller/PostsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="36" lean-forward="true" selection-start-line="31" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/findmyband/controller/MemberController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="35" lean-forward="true" selection-start-line="30" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
