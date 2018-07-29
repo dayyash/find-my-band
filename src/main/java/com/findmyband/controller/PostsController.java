@@ -29,7 +29,8 @@ public class PostsController {
         return new ResponseEntity<>(newPost, HttpStatus.OK);
     }
 
-    @PostMapping(path="/two", produces= MediaType.APPLICATION_JSON_VALUE)
+       @CrossOrigin
+    @GetMapping(path="/two", produces= MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Posts>> getAllPosts(){
         List<Posts> posts = postsService.getPosts();
         return new ResponseEntity<>(posts, HttpStatus.OK);
