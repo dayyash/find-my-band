@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Table(name = "posts", schema = "public")
 @NamedQuery(
         name = "getAllPosts",
-        query = "From Posts"
+        query = "From Posts Order By id desc"
 )
 public class Posts {
     @Id

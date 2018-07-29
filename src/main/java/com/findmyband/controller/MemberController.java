@@ -40,7 +40,8 @@ public class MemberController {
         return new ResponseEntity<>(newMember, HttpStatus.OK);
     }
 
-    @PostMapping(path="/two", produces= MediaType.APPLICATION_JSON_VALUE)
+    @CrossOrigin
+    @GetMapping(path="/two", produces= MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Member>> listMembers(){
         List<Member> members = memberService.listMembers();
         return new ResponseEntity<>(members, HttpStatus.OK);
