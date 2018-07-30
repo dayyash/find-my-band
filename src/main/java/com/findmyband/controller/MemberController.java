@@ -28,11 +28,12 @@ public class MemberController {
         return new ResponseEntity<>(newMember, HttpStatus.OK);
     }
 
-//    @GetMapping(path="/two", produces= MediaType.APPLICATION_JSON_VALUE)
-//    public ResponseEntity<Member> findMember(Serializable id){
-//        Member newMember = memberService.findMember(id);
-//        return new ResponseEntity<>(newMember, HttpStatus.OK);
-//    }
+    @CrossOrigin
+    @GetMapping(path="/four", produces= MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Member> findMember(@RequestParam Integer id){
+        Member newMember = memberService.findMember(id);
+        return new ResponseEntity<>(newMember, HttpStatus.OK);
+    }
 
     @PostMapping(path="/three", produces= MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Member> findMember(String username, String password){

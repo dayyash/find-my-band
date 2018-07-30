@@ -21,7 +21,7 @@ public class MemberService {
     public Member save(Member member) {return memberDao.save(member);}
 
     @Transactional
-    public Member findMember(Serializable id){return memberDao.getById(id);}
+    public Member findMember(Integer id){return memberDao.getById(id);}
 
     @Transactional
     public Member findMember(String username, String password) {
