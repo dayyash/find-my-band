@@ -20,12 +20,6 @@ import javax.persistence.*;
                 query = "From Member"
         )
 })
-@NamedNativeQueries({
-        @NamedNativeQuery(
-                name = "getMemberByIdNS",
-                query = "SELECT * FROM member WHERE id = ?"
-        )
-})
 public class Member {
 
     @Id

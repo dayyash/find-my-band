@@ -11,6 +11,8 @@ import java.io.Serializable;
 import java.sql.SQLException;
 import java.util.List;
 
+import static java.lang.Integer.parseInt;
+
 @Repository
 public class MemberDaoImpl implements MemberDao {
     @Autowired
@@ -24,7 +26,6 @@ public class MemberDaoImpl implements MemberDao {
         System.out.println("MemberDao start save ---");
         Integer id = (Integer) sessionFactory.getCurrentSession().save(member);
         member.setId(id);
-//        System.out.println("MemberDao -- " + sessionFactory.getCurrentSession().get(Member.class, 9));
         return member;
     }
 
@@ -49,9 +50,109 @@ public class MemberDaoImpl implements MemberDao {
     }
 
     @Override
+    public Member updateFirstname(String firstname, Serializable id) {
+        Member m = getById(id);
+        m.setFirstname(firstname);
+
+        return (Member) sessionFactory.getCurrentSession().merge(m);
+    }
+
+    @Override
+    public Member updateLastname(String lastname, Serializable id) {
+        Member m = getById(id);
+        m.setLastname(lastname);
+
+        return (Member) sessionFactory.getCurrentSession().merge(m);
+
+    }
+
+    @Override
+    public Member updateUsername(String username, Serializable id) {
+        Member m = getById(id);
+        m.setUsername(username);
+
+        return (Member) sessionFactory.getCurrentSession().merge(m);
+
+    }
+
+    @Override
+    public Member updatePassword(String password, Serializable id) {
+        Member m = getById(id);
+        m.setPassword(password);
+
+        return (Member) sessionFactory.getCurrentSession().merge(m);
+
+    }
+
+    @Override
+    public Member updateCity(String city, Serializable id) {
+        Member m = getById(id);
+        m.setCity(city);
+
+        return (Member) sessionFactory.getCurrentSession().merge(m);
+
+    }
+
+    @Override
+    public Member updateState(String state, Serializable id) {
+        Member m = getById(id);
+        m.setState(state);
+
+        return (Member) sessionFactory.getCurrentSession().merge(m);
+
+    }
+
+    @Override
+    public Member updateSpecialty(String specialty, Serializable id) {
+        Member m = getById(id);
+        m.setSpecial1(specialty);
+
+        return (Member) sessionFactory.getCurrentSession().merge(m);
+
+    }
+
+    @Override
+    public Member updateWebsite(String website, Serializable id) {
+        Member m = getById(id);
+        m.setSpecial3(website);
+
+        return (Member) sessionFactory.getCurrentSession().merge(m);
+
+    }
+
+    @Override
+    public Member updateGender(String gender, Serializable id) {
+        Member m = getById(id);
+        m.setGender(gender);
+
+        return (Member) sessionFactory.getCurrentSession().merge(m);
+
+    }
+
+    @Override
+    public Member updateGenre(String genre, Serializable id) {
+        Member m = getById(id);
+        m.setGenres(genre);
+
+        return (Member) sessionFactory.getCurrentSession().merge(m);
+
+    }
+
+    @Override
+    public Member updateAge(Serializable age, Serializable id) {
+        Member m = getById(id);
+        m.setAge((Integer)age);
+
+        return (Member) sessionFactory.getCurrentSession().merge(m);
+
+    }
+
+    @Override
     public List<Member> getAll() {
 
         List<Member> members = sessionFactory.getCurrentSession().getNamedQuery("getAllMembers").list();
         return members;
     }
+
+
 }

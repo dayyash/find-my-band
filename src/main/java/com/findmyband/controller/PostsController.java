@@ -23,13 +23,14 @@ public class PostsController {
     @Autowired
     public void setPostsService(PostsService postsService) {this.postsService = postsService;}
 
+    @CrossOrigin
     @PostMapping(path="/one", produces= MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
        public ResponseEntity<Posts> addPostMessage(@RequestBody Posts post){
         Posts newPost = postsService.save(post);
         return new ResponseEntity<>(newPost, HttpStatus.OK);
     }
 
-       @CrossOrigin
+    @CrossOrigin
     @GetMapping(path="/two", produces= MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Posts>> getAllPosts(){
         List<Posts> posts = postsService.getPosts();
