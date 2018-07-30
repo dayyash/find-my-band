@@ -32,4 +32,57 @@ public class MemberService {
     public List<Member> listMembers() {
         return memberDao.getAll();
     }
+
+    @Transactional
+    public Member updateFirstname(String s, Serializable id) {
+        return memberDao.updateFirstname(s,id);
+    }
+
+    @Transactional
+    public Member updateLastname(String s, Serializable id) {
+        return memberDao.updateLastname(s,id);
+    }
+
+    @Transactional
+    public Member updateUsername(String s, Serializable id) {
+        return memberDao.updateUsername(s,id);
+    }
+
+    @Transactional
+    public Member updatePassword(String s, Serializable id) {
+        return memberDao.updatePassword(s,id);
+    }
+
+    @Transactional
+    public Member updateCity(String s, Serializable id) {
+        return memberDao.updateCity(s,id);
+    }
+
+    @Transactional
+    public Member updateState(String s, Serializable id) {
+        return memberDao.updateState(s,id);
+    }
+
+    @Transactional
+    public Member updateSpecialty(String s, Serializable id) {
+        return memberDao.updateSpecialty(s,id);
+    }
+
+    @Transactional
+    public Member updateWebsite(String s, Serializable id) {
+        return memberDao.updateWebsite(s,id);
+    }
+
+    @Transactional
+    public Member updateGender(String s, Serializable id) {
+        return memberDao.updateGender(s,id);
+    }
+    @Transactional
+    public Member updateGenre(String s, Serializable id) {
+        return memberDao.updateGenre(s,id);
+    }
+    @Transactional
+    public Member updateAge(Serializable s, Serializable id) {
+        return memberDao.updateAge(s,id);
+    }
 }
