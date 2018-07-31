@@ -11,7 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { SendComponent } from './send/send.component';
-
+import { CookieService } from 'ngx-cookie-service';
 
 
 @NgModule({
@@ -30,7 +30,7 @@ import { SendComponent } from './send/send.component';
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

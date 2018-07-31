@@ -19,7 +19,7 @@ import static java.lang.Integer.parseInt;
 @Controller
 @RequestMapping("/member")
 @ResponseBody
-public class MemberController {
+public class    MemberController {
     MemberService memberService;
 
     @Autowired

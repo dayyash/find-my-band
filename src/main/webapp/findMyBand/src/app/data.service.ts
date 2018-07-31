@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class DataService {
+export class DataService {  
 
   constructor(private http: HttpClient) { }
 
@@ -17,5 +17,9 @@ export class DataService {
 
   getPosts() {
     return this.http.get('http://localhost:8081/api/posts/two')
+  }
+
+  sendPost(memberId, message,timestamp) {
+    return this.http.post('http://localhost:8081/api/posts/one',{"memberid":memberId, "message":message, "timestamp":timestamp})
   }
 }

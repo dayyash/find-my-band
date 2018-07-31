@@ -3,6 +3,7 @@
 <ul [@listStagger]="posts$"> 
 
   <li *ngFor="let post of posts$">
-    <a routerLink="/details/{{post.memberid}}">{{ post.message }}</a>
+    <a routerLink="/details/{{post.memberid}}">{{ post.message }} </a>
+    <strong>Time Sent: {{post.timestamp | date}} {{post.timestamp  | date: 'h:mm a' }}</strong>
   </li>
 </ul>

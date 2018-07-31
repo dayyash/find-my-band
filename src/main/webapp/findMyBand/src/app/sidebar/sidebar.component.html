@@ -20,7 +20,7 @@
       </li>
     
     <li>
-      <a routerLink="profile" [class.activated]="currentUrl == '/profile'">
+      <a routerLink="details/{{this.cookieval}}"  [class.activated]="currentUrl == '/details/22'">
         <i class="material-icons">face</i>
       </a>
     </li>
@@ -32,7 +32,7 @@
       </li>
 
       <li>
-          <a routerLink="" [class.activated]="currentUrl == ''">
+          <a routerLink="" [class.activated]="currentUrl == '' "(onclick) ="logout()" >
             <i class="material-icons">power_settings_new</i>
           </a>
         </li>
